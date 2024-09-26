@@ -16,8 +16,9 @@
     flex-direction: column;
     gap: 15px;
     justify-content:center;
-    
+
 }
+
 
 .about-text > h1{
     margin: 0;

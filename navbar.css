@@ -7,7 +7,10 @@ nav{
     justify-content: center;
     align-items: center;
     color: var(--cream); 
+    z-index: 1000;
 }
+
+
 
 .nav-option{
     display: flex; 
@@ -19,10 +22,28 @@ nav{
     margin-left: 12px;
     margin-right: 12px; 
 }
-.nav-option:hover{
-    cursor: pointer; 
+
+.nav-text > a {
+    text-decoration: none;
+    color: white;
 }
 
+.nav-option .nav-svg > img{
+    height: 21.5px;
+}
+
+@keyframes wipe-in-up {
+    from {
+      clip-path: inset(100% 0 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  [transition-style="in:wipe:up"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
+  }
 /*video panel styles*/
 .video-panel{
     height: 85vh; 
@@ -42,18 +63,23 @@ nav{
     
 }
 
-.text{
+.video-text{
     position: absolute; 
     text-align: center; 
     z-index: 2; 
     color: #f1f1f1;
     width: 100%;
+    animation: fadeIn 4s;
 }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 .upper{
-    font-size:7rem;
+    font-size:7.5rem;
     margin: 0; 
 }
 .lower{
     margin: 0; 
-    font-size: 2rem; 
+    font-size: 2em; 
 }

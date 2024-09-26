@@ -1,0 +1,28 @@
+footer{
+    background-color: var(--yale-blue);
+    height: 30vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px; 
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+
+}
+
+.col > h1{
+    margin:0;
+    padding:0;
+}
+.col > span{
+    text-align: center;
+}
+
+a:visited{color: white; }

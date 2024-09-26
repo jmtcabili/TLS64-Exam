@@ -1,0 +1,77 @@
+.news{
+    background-image: linear-gradient(var(--yale-blue), var(--fire-red));
+    padding-top: 5%;
+    padding-bottom: 5%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.news > h1{
+    text-align: center; 
+    width:100%;
+    margin:0; 
+    padding:0 0 2.5%; 
+    color:white; 
+    font-size:5rem;
+}
+
+.card-list{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    width:80%;
+    max-width:900px;
+}
+
+.card{
+    width:200px;
+    height: 300px;
+    border:solid black;
+    border-radius:10px;
+    background-size: 100% 100%;
+    margin: 0 2.5% 2% 2.5%; 
+}
+
+.card-list.national .card:nth-child(1){
+    background-image: url("/assets/images/libertea.jpg");
+}
+.card-list.national .card:nth-child(2){
+    background-image: url("/assets/images/spirits.jpg");
+}
+.card-list.national .card:nth-child(3){
+    background-image: url("/assets/images/nucc.jpg");
+}
+.card-list.national .card:nth-child(4){
+    background-image: url("/assets/images/gold.jpg");
+}
+.card-list.national .card:nth-child(5){
+    background-image: url("/assets/images/ubg.jpg");
+}
+.card-list.national .card:nth-child(6){
+    background-image: url("/assets/images/genderbender.jpg");
+}
+
+.card-list.global .card:nth-child(1){
+    background-image: url("/assets/images/disc.png");
+}
+.card-list.global .card:nth-child(2){
+    background-color: white;
+    background-image: url("/assets/images/aobucg.webp");
+}
+.card-list.global .card:nth-child(3){
+    background-image: url("/assets/images/audl.jpeg");
+}
+.card-list.global .card:nth-child(4){
+    background-image: url("/assets/images/gold.jpg");
+}
+.card-list.global .card:nth-child(5){
+    background-image: url("/assets/images/ubg.jpg");
+}
+.card-list.global .card:nth-child(6){
+    background-image: url("/assets/images/genderbender.jpg");
+}   
