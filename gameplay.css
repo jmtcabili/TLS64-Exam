@@ -1,0 +1,57 @@
+.gameplay{
+    text-align: center;
+    margin: 2.5% 0 5%;
+}
+.gameplay > h1{
+    margin-bottom: 2.5%;
+    color: var(black);
+    font-size: 5rem;
+    text-align: left; 
+}
+
+.gameplay-block{
+    background-size: 100% 100%;
+    height:200px; 
+    color: white;
+    display:flex; 
+    flex-direction: column;
+    
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    
+}
+.gameplay-block > h1, .gameplay-block > p{
+    margin: 0; 
+    padding: 0;
+}
+
+.gameplay-block > h1{
+    font-size: 2.2rem;
+    margin-bottom: 10px; 
+    text-decoration: underline;
+}
+.left{
+    text-align: left;
+    align-items: start;
+}
+.right{
+    text-align:right;
+    align-items: end;
+}
+
+.gameplay-block > p{width: 40%;}
+
+
+#pull{
+    background: url("assets/gameplay/pull.png");
+}
+#throw{
+    background-image: url("assets/gameplay/throw.png");
+}
+#catch{
+    background-image: url("assets/gameplay/catch.png");
+}
+#layout{
+    background-image: url("assets/gameplay/layout.png");
+}

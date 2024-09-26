@@ -1,0 +1,80 @@
+/*About styles*/
+.about{
+    margin: 5% 0 5% 0; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:black;
+}
+
+.about-text, .about-media{
+    width: 50%;
+}
+
+.about-text{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content:center;
+    
+}
+
+.about-text > h1{
+    margin: 0;
+    font-size: 5rem; 
+    padding: 0; 
+}
+
+.about-text > p{
+    font-size: 1.1rem; 
+    text-align: justify;
+    width: 80%;
+}
+
+.about-media > img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+/*Quick characteristics*/
+.quick-characteristics{
+    display: flex; 
+    flex-direction: row;
+
+}
+.quick-box{
+    width: 33.333vw; 
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bebas Neue", sans-serif;
+    color:var(--cream);
+    gap:10%;
+}
+
+.quick-box > svg{
+    width: 40%;
+    height: 40%; 
+}
+
+.quick-box > h2{
+    margin: 0;
+    padding:0;
+}
+
+
+.quick-characteristics .quick-box:nth-child(1) {
+    background-color: var(--oxford-blue);
+}
+
+.quick-characteristics .quick-box:nth-child(2) {
+    background-color: var(--fire-red);
+}
+
+.quick-characteristics .quick-box:nth-child(3) {
+    background-color: var(--munsell-blue);
+}
+
