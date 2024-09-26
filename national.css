@@ -1,0 +1,32 @@
+.news{
+    background-image: linear-gradient(var(--yale-blue), var(--fire-red));
+    height: 100vh; 
+    padding-top: 5%;
+    padding-bottom: 5%; 
+}
+
+.news > h1{
+    margin:0; 
+    padding:0; 
+    color:white; 
+    font-size:5rem;
+}
+
+.card-list{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    height:70%;
+    gap:2%;
+}
+
+.card{
+    width:30%;
+    height:100%;
+    max-width:250px;
+    max-height: 350px;
+    border:solid black;
+    border-radius:10px;
+}
