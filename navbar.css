@@ -53,11 +53,12 @@ nav{
     overflow: hidden;
     display: flex; 
     align-items: center;
+    background-image: url("/assets/images/video-panel.jpg");
+    background-size: 100% 100%; 
 }
 
 #video{
     top: 10vh; 
-    
     position: relative; 
     z-index: 1; 
     bottom: 100px;
