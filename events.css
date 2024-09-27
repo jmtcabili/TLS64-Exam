@@ -35,6 +35,37 @@
     border-radius:10px;
     background-size: 100% 100%;
     margin: 0 2.5% 2% 2.5%; 
+    padding: 0 1% 1.25% 1%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.info{
+    background-color: #1E1E1E; 
+    color:white;
+    border-radius: 10px;
+    padding:5%;
+    width: 100%;
+    height: 25%;   
+    display: flex;
+    flex-direction: column;
+    opacity:calc(0);
+    transition: opacity 0.6s;  
+}
+
+.date{
+    height: 20%;
+    display: block;
+    text-decoration:underline;
+}
+.event{
+    font-size: 0.8rem;
+    height:80%;
+    display:flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
 }
 
 .card-list.national .card:nth-child(1){
@@ -74,4 +105,8 @@
 }
 .card-list.global .card:nth-child(6){
     background-image: url("/assets/images/genderbender.jpg");
-}   
+}
+
+.card-list .card:hover .info{
+    opacity: 1;
+}
