@@ -8,6 +8,11 @@ html{
     --oxford-blue: #0B2545;
     --fire-red: #C1292E;
     --munsell-blue: #258EA6;
+
+    --animation-yb: #355f99;
+    --animation-fr: #ec3f44;
+    --animation-mb: #3eb1c5;
+
 }
 
 .padding-lr{

@@ -45,6 +45,7 @@
 
 }
 .quick-box{
+    position: relative;
     width: 33.333vw; 
     height: 40vh;
     display: flex;
@@ -59,12 +60,30 @@
 .quick-box > svg{
     width: 40%;
     height: 40%; 
+    z-index: 1;
 }
 
 .quick-box > h2{
     margin: 0;
     padding:0;
+    z-index: 1;
 }
+#stop{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10%;
+}
+#stop > svg{
+    width: 65%;
+    height: 65%;
+    stroke-dasharray: 500;  
+    stroke-dashoffset: 500; 
+    transition: transform 0.6s, stroke-dashoffset 0.8s ease-in-out; 
+    z-index: 2;
+}
+
 
 
 .quick-characteristics .quick-box:nth-child(1) {
@@ -78,4 +97,56 @@
 .quick-characteristics .quick-box:nth-child(3) {
     background-color: var(--munsell-blue);
 }
+
+.quick-box:nth-child(1) .hover-block{
+    background-color: var(--animation-yb);
+}
+.quick-box:nth-child(2) .hover-block{
+    background-color: var(--animation-fr);
+}
+.quick-box:nth-child(3) .hover-block{
+    background-color: var(--animation-mb);
+}
+
+.hover-block{
+    position:absolute;
+    bottom:0;
+    height: 0px;
+    width: inherit;
+    transition: height 0.4s;
+    z-index: 0;
+}
+
+.quick-box:nth-child(1):hover .hover-block,
+.quick-box:nth-child(2):hover .hover-block,
+.quick-box:nth-child(3):hover .hover-block{
+    height:100%;
+}
+
+.quick-box:nth-child(1) svg,
+.quick-box:nth-child(2) svg,
+.quick-box:nth-child(3) svg{
+    transition: transform 0.7s;
+}
+
+.quick-box:nth-child(1):hover svg{
+    transform: translateY(-10%) scaleX(-1);
+}
+
+.quick-box:nth-child(2):hover #stop>svg{
+    stroke-dashoffset: 0;  /* On hover: path is drawn */
+    transition: stroke-dashoffset 0.6s ease-in;  /* Duration and easing for drawing the path */
+    transform: translateY(-8%);
+}
+
+.quick-box:nth-child(2):hover svg{
+    transform: translateY(-10%);
+}
+
+.quick-box:nth-child(3):hover svg{
+    transform: translateY(-10%) rotate(360deg);
+}
+
+
+
 
