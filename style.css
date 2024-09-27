@@ -27,16 +27,16 @@ html{
 /* Tablet view (width between 768px and 1199px) */
 @media (max-width: 1199px) and (min-width: 768px) {
     .padding-lr {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
 
 /* Mobile view (width below 768px) */
 @media (max-width: 767px) {
     .padding-lr {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 

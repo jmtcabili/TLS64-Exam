@@ -5,18 +5,26 @@
     flex-direction: row;
     align-items: center;
     color:black;
+    gap: 10%: 
+}
+
+@media (max-width: 800px) {
+    .about {
+        flex-direction:column;
+        justify-content:center; 
+        align-items:center; 
+    }
+    .about-text{
+        text-align:center; 
+
+    }
+    .about-text > p{
+        width: 100%; 
+    }
 }
 
 .about-text, .about-media{
     width: 50%;
-}
-
-.about-text{
-    display:flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content:center;
-
 }
 
 
@@ -76,8 +84,8 @@
     margin-bottom:10%;
 }
 #stop > svg{
-    width: 65%;
-    height: 65%;
+    width: 70%;
+    height: 70%;
     stroke-dasharray: 500;  
     stroke-dashoffset: 500; 
     transition: transform 0.6s, stroke-dashoffset 0.8s ease-in-out; 
@@ -136,7 +144,7 @@
 .quick-box:nth-child(2):hover #stop>svg{
     stroke-dashoffset: 0;  /* On hover: path is drawn */
     transition: stroke-dashoffset 0.6s ease-in;  /* Duration and easing for drawing the path */
-    transform: translateY(-8%);
+    transform: translateY(-10%);
 }
 
 .quick-box:nth-child(2):hover svg{

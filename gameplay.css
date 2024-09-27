@@ -42,6 +42,11 @@
 }
 
 .gameplay-block > p{width: 40%;}
+@media (max-width: 800px) {
+    .gameplay-block > p {
+        width: 60%; 
+    }
+}
 
 
 #pull{
